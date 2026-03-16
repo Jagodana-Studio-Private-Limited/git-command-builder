@@ -1,7 +1,7 @@
 {
-  "name": "{{TOOL_NAME}}",
-  "short_name": "{{TOOL_SHORT_NAME}}",
-  "description": "{{TOOL_DESCRIPTION}}",
+  "name": "Git Command Builder",
+  "short_name": "Git Builder",
+  "description": "Build complex git commands visually. Select operations, configure flags, and copy the perfect git command.",
   "icons": [
     {
       "src": "/favicon.svg",
@@ -22,7 +22,7 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "{{BRAND_COLOR}}",
+  "theme_color": "#ea580c",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",

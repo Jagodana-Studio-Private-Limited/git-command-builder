@@ -1,98 +1,82 @@
 export const siteConfig = {
-  // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "Git Command Builder",
+  title: "Git Command Builder - Visual Git Command Generator",
+  description:
+    "Build complex git commands visually. Select operations, configure flags, and copy the perfect git command. No more memorizing git syntax.",
+  url: "https://git-command-builder.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
-  // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "GitBranch",
+  brandAccentColor: "#f97316",
 
-  // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "git command builder",
+    "git command generator",
+    "git cheat sheet",
+    "visual git tool",
+    "git flags",
+    "git options",
+    "git helper",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
-  // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#ea580c",
 
-  // Branding
   creator: "Jagodana",
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
-  // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
-  // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/git-command-builder",
     website: "https://jagodana.com",
   },
 
-  // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "Git Command Builder helps developers construct complex git commands visually — no memorization required. Pick an operation, toggle flags, fill in values, and copy the result.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "15+ git operations supported",
+      "Real-time command preview",
+      "One-click copy to clipboard",
+      "100% client-side — no data leaves your browser",
     ],
   },
 
-  // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Build Git Commands Visually",
+    titleLine1: "Never Memorize",
+    titleGradient: "Git Commands Again",
+    subtitle:
+      "Select an operation, configure options with checkboxes and inputs, and get the perfect git command — ready to copy and paste into your terminal.",
   },
 
-  // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "🧩",
+      title: "Visual Flag Builder",
+      description:
+        "Toggle flags and fill inputs instead of reading man pages. Every option is explained inline.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "⚡",
+      title: "Real-Time Preview",
+      description:
+        "Watch the command update live as you change options. What you see is what you paste.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "📋",
+      title: "One-Click Copy",
+      description:
+        "Copy the final command to your clipboard instantly. Paste it straight into your terminal.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
   relatedTools: [
-    {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
-    },
-    {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
-      icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
-    },
     {
       name: "Regex Playground",
       url: "https://regex-playground.jagodana.com",
@@ -100,75 +84,87 @@ export const siteConfig = {
       description: "Build, test & debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
+      name: "JSON Formatter",
+      url: "https://json-formatter.jagodana.com",
+      icon: "📄",
+      description: "Format and validate JSON with syntax highlighting.",
     },
     {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
+      name: "Cron Expression Visualizer",
+      url: "https://cron-expression-visualizer.jagodana.com",
+      icon: "⏰",
+      description: "Build and visualize cron schedules with plain-English output.",
     },
     {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "Chmod Calculator",
+      url: "https://tool-chmod-calculator.jagodana.com",
+      icon: "🔐",
+      description: "Calculate Unix file permissions visually.",
+    },
+    {
+      name: "Hash Generator",
+      url: "https://hash-generator.jagodana.com",
+      icon: "🔑",
+      description: "Generate MD5, SHA-1, SHA-256, and more from any text.",
+    },
+    {
+      name: "Diff Forge",
+      url: "https://diff-forge.jagodana.com",
+      icon: "🔀",
+      description: "Compare text side-by-side with highlighted differences.",
     },
   ],
 
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Choose an operation",
+      text: "Pick a git command like commit, branch, merge, rebase, stash, reset, or any of the 15+ supported operations.",
+      url: "",
+    },
+    {
+      name: "Configure options",
+      text: "Toggle flags with checkboxes and fill in values like branch names, commit messages, or file paths using the interactive form.",
+      url: "",
+    },
+    {
+      name: "Copy and run",
+      text: "Click the copy button to grab the fully-formed git command, then paste it into your terminal.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M",
 
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "How many git commands does this tool support?",
+      answer:
+        "Git Command Builder supports 15+ operations including commit, branch, checkout, merge, rebase, cherry-pick, stash, reset, log, diff, tag, clean, remote, fetch, and pull. Each operation comes with its most commonly used flags and options.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "Does this tool send my data to a server?",
+      answer:
+        "No. Git Command Builder runs 100% in your browser. Nothing is uploaded or stored anywhere. Your command inputs stay entirely on your device.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can I use this to learn git?",
+      answer:
+        "Absolutely. Each flag includes a short description of what it does, making this a great companion for learning git alongside the official documentation or tutorials.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "Is this free to use?",
+      answer:
+        "Yes, Git Command Builder is completely free with no sign-up required. It's part of the Jagodana 365 Tools Challenge — one free developer tool shipped every day.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title: "Git Command Builder - Visual Git Command Generator",
+      description:
+        "Build complex git commands visually. Select operations, configure flags, and copy the perfect git command. No more memorizing git syntax.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
